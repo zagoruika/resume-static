@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-controls">
+        <button id="theme-toggle">Dark mode</button>
+    </div>
+
+    <div class="wrapper">
+
+        <aside class="sidebar">
+            <div class="star-container">
+                <img src="img/star.svg" alt="Star">
+            </div>
+
+            <section class="section contacts">
+                <h2 class="section-title">CONTACTS<span class="number">01</span></h2>
+                <ul class="contact-list">
+                    <li><a href="mailto:viktoriia.zahoruiko@gmail.com">VIKTORIIA.ZAHORUIKO@GMAIL.COM</a></li>
+                    <li><a href="tel:+380989068937">+38 (098) 906 8937</a></li>
+                    <li><a href="https://t.me/zagoruika">TELEGRAM</a></li>
+                    <li><a href="https://www.linkedin.com/in/viktoriia-zahoruiko-723188323/">LINKEDIN</a></li>
+                </ul>
+            </section>
+        </aside>
+
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Viktoriia Zahoruiko, Data Scientist</h1>
+            </header>
+
+            <div class="grid-layout">
+                <div class="left-column">
+                    <section class="section">
+                        <h2 class="section-title">EXPERIENCE<span class="number">02</span></h2>
+
+                        <div class="experience-item">
+                            <span class="date">2025.05 - Present</span>
+                            <h3>DataWiz, Junior Data Analyst</h3>
+                            <p>Cleaning and preprocessing retail data for automated business intelligence reports.</p>
+                            <p>Assisting in building SQL queries to extract meaningful insights from customer databases.</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <span class="date">2024.10 - 2025.04</span>
+                            <h3>Lviv IT Cluster, Data Science Trainee</h3>
+                            <p>Participated in a "Smart City" project analyzing public transport GPS data.</p>
+                            <p>Used Python to visualize data trends and identify peak hours for passenger traffic.</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <span class="date">2024.02 - 2024.09</span>
+                            <h3>Netpeak, Marketing Data Analyst Intern</h3>
+                            <p>Setting up data tracking for websites and analyzing the effectiveness of advertising campaigns.</p>
+                            <p>Working with Google Analytics API and building simple predictive models for marketing ROI.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="section">
+                        <h2 class="section-title">EDUCATION<span class="number">03</span></h2>
+                        <div class="education-item">
+                            <span class="date">2023 - 2027</span>
+                            <h3>Lviv Polytechnic National University</h3>
+                            <p>Bachelor's degree, Cybersecurity</p>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">SKILLS<span class="number">04</span></h2>
+                        <div class="skills-grid">
+                            <span>Python</span><span>Pandas/NumPy</span>
+                            <span>SQL</span><span>Git</span>
+                            <span>ML</span><span>Scikit-learn</span>
+                            <span>Data Visualization</span><span>Statistical Analysis</span>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">LANGUAGES<span class="number">05</span></h2>
+                        <ul class="lang-list">
+                            <li>Ukrainian <span>Native</span></li>
+                            <li>English <span>B2</span></li>
+                            <li>Polish <span>B1</span></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <section class="section">
+                <h2 class="section-title">REVIEWS<span class="number">06</span></h2>
+                <div id="comments-container"></div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>© 2026 Viktoriia Zahoruiko</p>
+            <div id="system-info"></div>
+        </footer>
+    </div>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h3>Get in Touch</h3>
+            <form action="https://formspree.io/f/mzdkqzjz" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Name" required minlength="2">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10,13}"
+                    title="Please enter 10 to 13 digits">
+                <textarea name="message" placeholder="Your Message" required minlength="10"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
